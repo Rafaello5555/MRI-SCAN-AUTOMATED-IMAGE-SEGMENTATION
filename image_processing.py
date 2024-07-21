@@ -51,8 +51,8 @@ def center_crop(image, output_size):
     
     """
     image = np.array(image)
-    y_coordinate = (image.shape[0] - output_size.shape[0]) // 2    #Remove  leftover space by rows and  crop image on center 
-    x_coordinate = (image.shape[1] - output_size.shape[1]) // 2. # Remove space by column  and crop image on center
+    start_y_coordinate = (image.shape[0] - output_size.shape[0]) // 2    #Remove  leftover space by rows and  crop image on center 
+    start_x_coordinate = (image.shape[1] - output_size.shape[1]) // 2. # Remove space by column  and crop image on center
 
 
     crop_img = image[]
